@@ -1,0 +1,13 @@
+programa {
+  funcao inicio() {
+    inteiro nota, contador, media = 0 , aux = 0
+
+    para(contador=1;contador<=10;contador++){
+      escreva ("Informe a ", contador ,"ª nota: ")
+       leia (nota)
+      aux = nota + aux
+    }
+    media = aux / 10
+    escreva ("A total media é ", media, " é a soma das notas é ", aux)
+  }
+}
