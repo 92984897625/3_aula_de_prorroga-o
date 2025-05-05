@@ -1,0 +1,25 @@
+programa {
+  funcao inicio() {
+    inteiro numero, contador, calculo=1, aux, aux2
+
+    escreva ("informe um numero: ")
+     leia (numero)
+     aux = numero
+    para (contador=numero; contador!=0; contador--) {
+      escreva (aux)
+
+      aux2 = aux - 1
+
+      se (aux != 1 e aux != numero) {
+        calculo = calculo*aux2}
+      se (aux == numero) {
+        calculo = aux*aux2}
+      
+      aux--
+
+      se (aux != 0) {
+        escreva (" x ")}
+    }
+    escreva (" = ", calculo)
+  }
+}
